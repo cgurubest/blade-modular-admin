@@ -33,6 +33,13 @@ public function showRegistrationForm()
     
 ```
 
+##RedirectIfAuthenticated
+```
+if (Auth::guard($guard)->check()) {
+            return redirect('/');
+        }
+```
+
 ## HomeController
 ```
    public function __construct()
