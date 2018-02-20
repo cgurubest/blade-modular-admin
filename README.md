@@ -33,7 +33,7 @@ public function showRegistrationForm()
     
 ```
 
-##RedirectIfAuthenticated
+## Middleware/RedirectIfAuthenticated
 ```
 if (Auth::guard($guard)->check()) {
             return redirect('/');
